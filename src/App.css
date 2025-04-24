@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: plum;
+    text-decoration: underline;
+    transition: all 0.25s ease-in-out;
+}
+
+.App-footer {
+    text-align: center;
+}
