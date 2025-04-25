@@ -1,4 +1,5 @@
 import React from "react";
+import Meaning from "./Meaning"
 
 export default function Results(props) {
     const results = props.results;
@@ -18,21 +19,12 @@ export default function Results(props) {
                 <p className="phonetic">/{results.phonetic}/</p>
 
                 {filterdMeanings.map((meaning, index) => (
-                    <div key={index}>
-                        <h4>{meaning.partOfSpeech}</h4>
-                        <p><strong>Definition:</strong> {meaning.definition}</p>
-                        {meaning.example && (
-                            <p><em>Example:</em> {meaning.example}</p>
-                        )}
-                        {Array.isArray(meaning.synonyms) && meaning.synonyms.length > 0 && (
-                            <p><strong>Synonyms:</strong> {meaning.synonyms.join(", ")}</p>
-                        )}
-                    </div>
+                    <Meaning key={index} meaning={meaning} />
                 ))}
             </div>
         );
     } else {
-        return null;
+        return <p>We couldn't find that word or there was a problem. Please try another word. </p>;
     }
 }
 
