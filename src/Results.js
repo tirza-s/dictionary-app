@@ -6,7 +6,7 @@ export default function Results(props) {
     const results = props.results;
 
     if (results && Array.isArray(results.meanings)) {
-        const phonetic = results.phonetic;
+
         const firstNoun = results.meanings.find(m => m.partOfSpeech === "noun");
         const firstAdjective = results.meanings.find(m => m.partOfSpeech === "adjective");
 

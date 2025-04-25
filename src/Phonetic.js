@@ -20,7 +20,7 @@ export default function Phonetic({ phonetic, word }) {
         }
 
         utterance.pitch = 1.2;
-        utterance.rate = 0.9;
+        utterance.rate = 0.8;
 
         speechSynthesis.speak(utterance);
     }
