@@ -1,11 +1,12 @@
 import React from "react";
 import Meaning from "./Meaning"
+import Phonetic from "./Phonetic";
 
 export default function Results(props) {
     const results = props.results;
 
     if (results && Array.isArray(results.meanings)) {
-
+        const phonetic = results.phonetic;
         const firstNoun = results.meanings.find(m => m.partOfSpeech === "noun");
         const firstAdjective = results.meanings.find(m => m.partOfSpeech === "adjective");
 
@@ -14,7 +15,8 @@ export default function Results(props) {
         return (
             <div className="Results">
                 <h3>{results.word}</h3>
-                <p className="phonetic">/{results.phonetic}/</p>
+
+                <Phonetic phonetic={results.phonetic} word={results.word} />
 
                 {filterdMeanings.map((meaning, index) => (
                     <Meaning key={index} meaning={meaning} />
