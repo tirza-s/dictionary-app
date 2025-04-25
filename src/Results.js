@@ -6,11 +6,9 @@ export default function Results(props) {
 
     if (results && Array.isArray(results.meanings)) {
 
-        {/* Only get the first noun and first adjective */ }
         const firstNoun = results.meanings.find(m => m.partOfSpeech === "noun");
         const firstAdjective = results.meanings.find(m => m.partOfSpeech === "adjective");
 
-        {/* remove any undifined */ }
         const filterdMeanings = [firstNoun, firstAdjective].filter(Boolean);
 
         return (
