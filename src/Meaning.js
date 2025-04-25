@@ -1,4 +1,5 @@
 import React from "react";
+import Synonyms from "./Synonyms";
 
 export default function Meaning({ meaning }) {
     return (
@@ -11,9 +12,8 @@ export default function Meaning({ meaning }) {
                 <p><em>Example:</em> {meaning.example}</p>
             )}
 
-            {Array.isArray(meaning.synonyms) && meaning.synonyms.length > 0 && (
-                <p><strong>Synonyms:</strong> {meaning.synonyms.join(", ")}</p>
-            )}
+            <Synonyms synonyms={meaning.synonyms} />
+
         </div>
     );
 }
