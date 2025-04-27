@@ -14,13 +14,18 @@ export default function Results(props) {
 
         return (
             <div className="Results">
-                <h3>{results.word}</h3>
+                <section className="Results-section">
+                    <h3>{results.word}</h3>
+                    <Phonetic phonetic={results.phonetic} word={results.word} />
+                </section>
 
-                <Phonetic phonetic={results.phonetic} word={results.word} />
+
+
 
                 {filterdMeanings.map((meaning, index) => (
                     <Meaning key={index} meaning={meaning} />
                 ))}
+
             </div>
         );
     } else {

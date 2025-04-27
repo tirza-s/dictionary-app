@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVolumeLow } from '@fortawesome/free-solid-svg-icons';
 
 export default function Phonetic({ phonetic, word }) {
     useEffect(() => {
@@ -19,16 +21,20 @@ export default function Phonetic({ phonetic, word }) {
             utterance.voice = betterVoice;
         }
 
-        utterance.pitch = 1.2;
+        utterance.pitch = 1.4;
         utterance.rate = 0.8;
 
         speechSynthesis.speak(utterance);
+
     }
 
     return (
-        <div className="Phonetic">
-            <p className="phonetic">/{phonetic}/</p>
-            <button onClick={() => speak(word)} className="phonetic"> 🔊</button>
+        <div className="Phonetic d-flex gap-3 mt-3">
+            <button onClick={() => speak(word)} className="btn btn-link ">
+                <FontAwesomeIcon icon={faVolumeLow} size="2x" />
+            </button>
+            <p className="phonetic-text">/{phonetic}/</p>
+
         </div>
     )
 }

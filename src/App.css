@@ -1,3 +1,8 @@
+body {
+    background-color: rgba(210, 218, 255, 0.897);
+    font-family: "Montserrat", sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -10,4 +15,11 @@ a:hover {
 
 .App-footer {
     text-align: center;
+    padding-top: 30px;
+}
+
+.title {
+    text-align: center;
+    padding: 60px;
+    padding-bottom: 18px;
 }

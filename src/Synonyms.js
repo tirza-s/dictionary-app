@@ -6,9 +6,7 @@ export default function Synonyms({ synonyms }) {
 
     return (
         <div className="Synonyms">
-
-            <p><strong>Synonyms:</strong> {synonyms.join(", ")}</p>
-
+            <span className="synonyms">synonyms : </span>{synonyms.join(", ")}
         </div>
     )
 }
