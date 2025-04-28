@@ -4,22 +4,57 @@ A simple dictionary app built with React that allows users to search for words, 
 
 ### Features:
 
-Search for words and view their meanings
+- Search for words and view their meanings
 
-See phonetic pronunciation of the word
+- See phonetic and listend to the pronunciation of the word
 
-Display images related to the word from the Pexels API
+- Display images related to the word from the Pexels API
 
-Error handling when no word is found or there is a problem with the search
+- Error handling when no word is found or there is a problem with the search
 
 ### Technologies Used:
 
-React
+- React
 
-Axios (for API requests)
+- Axios (for API requests)
 
-Bootstrap
+- Bootstrap
 
-Pexels API (for fetching images)
+- Pexels API (for fetching images)
 
-SheCodes Dictionary API (for word definitions)
+- SheCodes Dictionary API (for word definitions)
+
+## Installation:
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/dictionary-app.git
+cd dictionary-app
+```
+
+### 2. instal dependencies
+
+- npm install
+
+### 3. Set up environment variables:
+
+You need to obtain API keys for both SheCodes Dictionary API and Pexels API.
+
+### 4. Start the development server:
+
+- npm start
+
+Usage:
+
+    Enter a word in the search bar and press "Enter" or click the search button.
+
+    The app will show the definition, phonetic pronunciation, and images related to the word.
+
+Error Handling:
+
+    If no definition is found for the word or there is a problem, an error message will be displayed.
+
+    If no images are available for the searched word, the images section will remain empty.
+
+    ![Screenshot of Dictionary App](./src/image/dictionary-image.png)
