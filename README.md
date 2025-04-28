@@ -11,6 +11,7 @@ A simple dictionary app built with React that allows users to search for words, 
 - Search for words and view their meanings
 
 - See phonetic and listend to the pronunciation of the word
+- See phonetic and listend to the pronunciation of the word
 
 - Display images related to the word from the Pexels API
 
@@ -60,5 +61,3 @@ Error Handling:
     If no definition is found for the word or there is a problem, an error message will be displayed.
 
     If no images are available for the searched word, the images section will remain empty.
-
- 

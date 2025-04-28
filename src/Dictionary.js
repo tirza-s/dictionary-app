@@ -60,7 +60,7 @@ export default function Dictionary() {
                 <form onSubmit={search}>
                     <h3 className="dictionary-word">What word do you want to look up?</h3>
                     <input type="search" onChange={handleKeyWordChange} />
-                    <p className="word-example">i.e. bali, beach, sunset </p>
+                    <p className="word-example">i.e. brave, beach, sunset </p>
                 </form>
             </section>
             {error && <div className="error">{error}</div>}
