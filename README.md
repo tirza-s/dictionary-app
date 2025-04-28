@@ -4,7 +4,7 @@ A simple dictionary app built with React that allows users to search for words, 
 
 ## Screenshots:
 
-![screenshot](./src/image/dictionary-image.png)
+![Image](https://github.com/user-attachments/assets/2889f631-df6c-43f6-b2db-d33b27d3781f)
 
 ### Features:
 
