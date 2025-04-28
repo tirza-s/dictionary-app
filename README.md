@@ -2,6 +2,10 @@
 
 A simple dictionary app built with React that allows users to search for words, view their definitions, and see relevant images fetched from Pexels API.
 
+## Screenshots:
+
+![React Dictionary App](./public/images/dictionary-image.png)
+
 ### Features:
 
 - Search for words and view their meanings
@@ -57,4 +61,4 @@ Error Handling:
 
     If no images are available for the searched word, the images section will remain empty.
 
-    ![Screenshot of Dictionary App](./src/image/dictionary-image.png)
+ 
