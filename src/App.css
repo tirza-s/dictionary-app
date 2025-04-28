@@ -1,25 +1,42 @@
+:root {
+    --font: "Montserrat", sans-serif;
+    --primary-color: rgba(210, 218, 255, 0.897);
+    --secondary-color: rgba(68, 61, 139, 0.926);
+    --hover-color: rgb(176, 57, 244);
+}
+
 body {
-    background-color: rgba(210, 218, 255, 0.897);
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--primary-color);
+    font-family: var(--font)
+}
+
+.container {
+    padding: 0;
+    max-width: 875px;
 }
 
 a {
     text-decoration: none;
+    color: var(--secondary-color)
 }
 
 a:hover {
     cursor: pointer;
-    color: plum;
+    color: var(--hover-color);
     transition: all 0.25s ease-in-out;
 }
 
 .App-footer {
     text-align: center;
     padding-top: 30px;
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 .title {
+    color: var(--secondary-color);
     text-align: center;
     padding: 60px;
     padding-bottom: 18px;
+    font-weight: 800;
 }

@@ -1,31 +1,41 @@
-.container {
-    padding: 0;
-    max-width: 850px;
-
+:root {
+    --box-shadow-color: 0 10px 10px rgba(28, 27, 27, 0.1);
+    --container-background-color: rgba(241, 239, 244, 0.773);
+    --container-dictionary-word: rgba(173, 96, 218, 0.877);
+    --input-color: rgba(246, 243, 248, 0.942);
+    --border-color: rgba(210, 218, 255, 0.897);
+    --icon-color: rgba(221, 160, 221, 0.908);
+    --error-message-color: rgb(255, 87, 34);
 }
 
 section {
-    background-color: #F9F7F7;
+    box-shadow: var(--box-shadow-color);
+    background-color: var(--container-background-color);
     padding: 30px;
 }
 
 .Dictionary-section {
     margin-top: 0;
+    box-shadow: var(--box-shadow-color);
 }
 
 .dictionary-word {
+    font-size: 1.3rem;
     margin-bottom: 14px;
-    font-weight: 500;
+    color: var(--container-dictionary-word);
 }
 
 .word-example {
     padding-top: 14px;
+    color: var(--container-dictionary-word);
+    opacity: 0.8;
 }
 
 .Dictionary-section,
 .Results-section,
 .Meaning-section,
-.Synonyms-section {
+.Synonyms-section,
+.Photos {
     margin: 20px;
     border-radius: 10px;
 }
@@ -34,10 +44,14 @@ input {
     max-width: 100%;
     width: 100%;
     padding: 18px;
-    background-color: #F9F7F7;
-    border: 2px solid rgba(210, 218, 255, 0.897);
+    background-color: var(--input-color);
+    border: 2px solid var(--border-color);
     border-radius: 10px;
     font-size: 1.2rem;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .definition {
@@ -58,27 +72,25 @@ input {
 .btn-link {
     border-radius: 35px;
     padding: 10px 15px;
-    color: plum;
-    border: 2px solid rgba(210, 218, 255, 0.897);
-    background-color: #F9F7F7;
+    color: var(--icon-color);
+    border: 2px solid var(--border-color);
+    background-color: var(--input-color);
     cursor: pointer;
     text-decoration: none;
 }
 
 .btn-link:hover {
-    color: plum;
-    background-color: #F9F7F7;
-    border-color: rgba(210, 218, 255, 0.897);
-
+    color: var(--icon-color);
+    background-color: var(--container-background-color);
+    border-color: var(--border-color)
 }
 
 .phonetic-text {
     padding-top: 17px;
 }
 
-
 .error {
     text-align: center;
-    color: #FF5722;
-    font-size: 1.2rem;
+    color: var(--error-message-color);
+    font-size: 1rem;
 }

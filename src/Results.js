@@ -2,24 +2,19 @@ import React from "react";
 import Meaning from "./Meaning"
 import Phonetic from "./Phonetic";
 
-export default function Results(props) {
-    const results = props.results;
+export default function Results({ results, photos }) {
 
     if (results && Array.isArray(results.meanings)) {
-
         const firstNoun = results.meanings.find(m => m.partOfSpeech === "noun");
         const firstAdjective = results.meanings.find(m => m.partOfSpeech === "adjective");
-
         const filterdMeanings = [firstNoun, firstAdjective].filter(Boolean);
 
         return (
             <div className="Results">
                 <section className="Results-section">
-                    <h3>{results.word}</h3>
+                    <h3 className="result">{results.word}</h3>
                     <Phonetic phonetic={results.phonetic} word={results.word} />
                 </section>
-
-
 
 
                 {filterdMeanings.map((meaning, index) => (
@@ -29,7 +24,7 @@ export default function Results(props) {
             </div>
         );
     } else {
-        return <p>We couldn't find that word or there was a problem. Please try another word. </p>;
+        return <p className="error">Oops! We couldn't find the definition for that word, or there was an issue retrieving it. Please double-check the word or try another one! </p>;
     }
 }
 

@@ -12,7 +12,7 @@ function App() {
         </main>
 
       </div>
-      <footer className="App-footer">Coded with 🤍 by
+      <footer className="App-footer">Coded with 💜 by
         <a href="https://tirzasamosir.netlify.app/" target="_blank" rel="noreferrer"> Tirza S.</a>
       </footer>
     </div>
